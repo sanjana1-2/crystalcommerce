@@ -1,14 +1,19 @@
 {
-  "name": "shopkart-ecommerce",
+  "name": "crystalcommerce-api",
   "version": "1.0.0",
-  "private": true,
+  "description": "Full-stack e-commerce API for Vercel",
+  "main": "index.js",
   "scripts": {
-    "client": "cd client && npm start",
-    "server": "cd server && npm run dev",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+    "dev": "vercel dev",
+    "build": "cd client && npm run build"
+  },
+  "dependencies": {
+    "mongoose": "^8.0.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5"
   },
   "devDependencies": {
-    "concurrently": "^8.2.0"
+    "@vercel/node": "^3.0.0"
   }
 }
