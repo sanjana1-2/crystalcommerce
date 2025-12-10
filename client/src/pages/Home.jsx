@@ -60,9 +60,9 @@ const Home = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-6 space-y-8">
       {/* Demo Notice */}
-      <div className="bg-yellow-100 border border-yellow-400 text-yellow-800 px-4 py-3 rounded-lg">
-        <p className="text-center">
-          🚀 <strong>Demo Mode:</strong> This is a frontend-only demo. Backend features (login, cart, payments) are not functional.
+      <div className="bg-blue-50 border border-blue-200 text-blue-700 px-4 py-2 rounded-lg">
+        <p className="text-center text-sm">
+          ✨ <strong>Live Demo:</strong> Showcasing frontend features with sample data
         </p>
       </div>
 
