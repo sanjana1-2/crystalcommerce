@@ -20,6 +20,14 @@ const Header = () => {
         setCategories(response.data);
       } catch (error) {
         console.error('Error fetching categories:', error);
+        // Fallback demo categories
+        setCategories([
+          { _id: '1', name: 'Mobiles', slug: 'mobiles' },
+          { _id: '2', name: 'Electronics', slug: 'electronics' },
+          { _id: '3', name: 'Fashion', slug: 'fashion' },
+          { _id: '4', name: 'Home & Furniture', slug: 'home-furniture' },
+          { _id: '5', name: 'Beauty', slug: 'beauty' }
+        ]);
       }
     };
     fetchCategories();
